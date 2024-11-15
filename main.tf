@@ -7,6 +7,7 @@ resource "google_project" "project" {
   project_id = "${var.project_name}-${random_id.suffix.hex}"
   org_id     = "${var.gcp_org_id}"
   billing_account = "${var.billing_account}"
+  deletion_policy = "DELETE"
 }
 
 resource "google_project_service" "project_service" {
