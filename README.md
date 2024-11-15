@@ -1,1 +1,1 @@
-# pulsedb database project
+# snapspot database project
