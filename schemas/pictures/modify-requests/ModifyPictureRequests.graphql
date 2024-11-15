@@ -1,0 +1,14 @@
+input SavePictureRequests {
+    location: String!
+    direction: Int!
+    capture_timestamp: Float!
+    request_title: String!
+    request_description: String
+    bid_type: String!
+}
+
+extend type Mutation {
+    savePictureRequest(request: SavePictureRequests!): FetchPictureRequests
+    updatePictureRequest(request_id: ID!, request: SavePictureRequests!): FetchPictureRequests
+    deletePictureRequest(request_id: ID!): ID!
+}
