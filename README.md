@@ -1,3 +1,1 @@
 # snapspot database project
-
-deploy
