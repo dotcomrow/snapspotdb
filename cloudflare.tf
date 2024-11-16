@@ -5,7 +5,7 @@ resource "cloudflare_r2_bucket" "cloudflare-bucket" {
 
 resource "cloudflare_d1_database" "pulse_ui_cache" {
   account_id = var.cloudflare_account_id
-  name       = "pulse_ui_${var.DATASET_ENV}_cache"
+  name       = "snapspot_${var.DATASET_ENV}_cache"
 }
 
 resource "cloudflare_d1_database" "api-gateway_cache" {
